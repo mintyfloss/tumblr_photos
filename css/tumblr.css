@@ -1,0 +1,157 @@
+html,
+body,
+section,
+article,
+article .postWrapper,
+article .photo {
+	height: 100%;
+}
+
+body {
+	color: #333;
+}
+
+/*** Header ***/
+	header {
+		padding: 10px 0;
+		background-color: #1B1B1B;	
+	}
+		header .headerLeft {
+			float: left;
+			width: 40px;
+			margin: 0 20px;
+		}
+		header .headerRight {
+			padding-top: 10px;
+			float: left;
+		}
+
+	header h1 {
+		margin: 0;
+		padding: 0;
+	}
+		
+	header p.description {
+		font-family: 'Merriweather', serif;
+		font-weight: 600;
+		font-style: italic;
+		color: #fff;
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+
+	header .navbar-fixed-top .nav {
+		left: 20px;
+	}
+
+	header .navbar .nav > li {
+		font-size: 14px;
+		line-height: 14px;
+		margin-right: 15px;
+	}
+
+	header .navbar .nav > li > a {
+		font-family: 'Arapey', serif;
+		padding: 1px 0;
+		border-bottom: 1px solid #1B1B1B;
+	}
+		header .navbar .nav > li > a:hover {
+			border-bottom: 1px solid #ccc;
+			-webkit-transition: border 0.2s ease;
+			-moz-transition: border 0.2s ease;
+			-o-transition: border 0.2s ease;
+			transition: border 0.2s ease;
+		}
+
+	header .navbar-inverse .navbar-inner {
+		background: none;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+		min-height: 14px;
+		padding: 4px 0;
+	}
+
+	header .navbar-fixed-top {
+		background: none;
+		background: #000;
+		-webkit-transition: background 0.4s ease;
+		-moz-transition: background 0.4s ease;
+		-o-transition: background 0.4s ease;
+		transition: background 0.4s ease;
+	}
+		header .navbar-fixed-top .navbar-inner {
+			background: none;
+		}
+
+	header a.brand {
+		border: none;	
+		display: inline-block;
+		background: url('../img/logos/mintyfied_logo4.png');
+		background-size: 40px 40px;
+		height: 40px;
+		width: 40px;
+		text-indent: -9000px;
+		overflow: hidden;
+	}
+		header.navbar-inverse a.brand {
+			color: #fff;
+		}
+
+/*** Posts ***/		
+	a,
+	a.permalink .permalinkText {
+		color: #333;
+		border-bottom: 1px dotted #aaa;
+		text-decoration: none;
+	}
+		a:hover,
+		a.permalink:hover .permalinkText {
+			color: #333;
+			border-bottom: 1px dotted #333;
+			text-decoration: none;
+		}
+		a.permalink {
+			border: none;
+		}
+
+	article {
+		position: relative;
+		text-align: center;
+		padding: 12% 0;
+		font-family: 'Merriweather', serif;
+	}
+
+	article .postWrapper {
+		display: inline-block;
+		text-align: left;
+	}
+
+	article .caption {
+		margin: 10px 0;
+	}
+
+	article .photo img {
+		max-height: 75%;
+	}
+
+	canvas.triangle {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 30px;
+		height: 30px;
+	}
+
+
+
+
+@media only screen and (max-width: 1023px) {
+
+
+}
+
+@media handheld, only screen and (max-width: 767px) {
+
+
+}
