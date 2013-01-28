@@ -12,18 +12,9 @@
 	<!--Normalize CSS-->
 	<link rel="stylesheet" href="http://static.tumblr.com/cqczc5x/ZZVmej6l8/normalize.css" type="text/css" media="all">
 	<link rel="stylesheet" href="http://localhost/~admin/tumblr_photos/css/bootstrap.min.css" type="text/css" media="all">
-	<link rel="stylesheet" href="http://localhost/~admin/tumblr_photos/css/bootstrap-responsive.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="http://localhost/~admin/tumblr_photos/css/tumblr.css" type="text/css" media="all">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|Merriweather|Oranienbaum|Arapey' rel='stylesheet' type='text/css'>	
 	<style type="text/css">
-
-		.clearfix {zoom:1;}
-		.clearfix:before, .clearfix:after {
-		  content: "\0020";
-		  display: block;
-		  height: 0;
-		  overflow: hidden; }
-		.clearfix:after {clear: both;}
 
 		/*Tumblr inherited */
 		iframe#tumblr_controls {}
@@ -49,6 +40,10 @@
 						<li><a href="/archive">{lang:Archive}</a></li>
 						<li><a href="/rss">{lang:RSS feed}</a></li>
 						{block:AskEnabled}<li><a href="/ask">{AskLabel}</a></li>{/block:AskEnabled}
+					</ul>
+
+					<ul class="nav" id="toTopNav">
+						<li><a id="toTop" href="javascript://">Top</a></li>
 					</ul>
 				</div>
 			</div>

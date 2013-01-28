@@ -40,17 +40,23 @@ body {
 		margin-bottom: 5px;
 	}
 
+	header .navbar {
+		margin-bottom: 10px;
+	}
+
 	header .navbar-fixed-top .nav {
-		left: 20px;
+		left: 10px;
 	}
 
 	header .navbar .nav > li {
 		font-size: 14px;
-		line-height: 14px;
-		margin-right: 15px;
+		line-height: 16px;
+		margin-right: 14px;
+		padding: 2px 0;
 	}
 
-	header .navbar .nav > li > a {
+	header .navbar .nav > li > a,
+	header .navbar a {
 		font-family: 'Arapey', serif;
 		padding: 1px 0;
 		border-bottom: 1px solid #1B1B1B;
@@ -68,8 +74,9 @@ body {
 		border: none;
 		border-radius: 0;
 		box-shadow: none;
-		min-height: 14px;
+		min-height: 20px;
 		padding: 4px 0;
+		position: relative;
 	}
 
 	header .navbar-fixed-top {
@@ -98,6 +105,18 @@ body {
 			color: #fff;
 		}
 
+	header #toTopNav {
+		display: none;
+		float: right;
+	}
+		header .navbar-fixed-top #toTopNav {
+			display: block;
+			position: static;
+		}
+		header .navbar-fixed-top #toTopNav.nav > li {
+			margin-right: 0;
+		}
+
 /*** Posts ***/		
 	a,
 	a.permalink .permalinkText {
@@ -118,7 +137,7 @@ body {
 	article {
 		position: relative;
 		text-align: center;
-		padding: 12% 0;
+		padding: 12% 4%;
 		font-family: 'Merriweather', serif;
 	}
 
